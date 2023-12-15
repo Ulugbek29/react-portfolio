@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 8%;
+    background: var(--main-color);
+}
+
+
+/*=============== Logo ===============*/
+.logo {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+/*=============== Nav Links ===============*/
+
+.nav__lists {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.gmail__btn  {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 1100px)  {
+    .nav__links {
+        display: none;
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .gmail__btn {
+        display: none;
+    }
+
+    .logo {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 400px)  {
+    .logo {
+        font-size: var(--small-font-size);
+    }
+}
